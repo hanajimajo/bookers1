@@ -1,0 +1,25 @@
+<body>
+    <h1>Editing Book</h1>
+
+
+<%= form_with model:@blog, local: true do |f| %>
+    <div class = "field">
+        <label for ="book_title">Title</label>
+    </div>
+    <%= f.text_field :title %>
+
+    <div class = "field">
+        <label for ="book_body">Body</label>
+    </div>
+    <%= f.text_area :body %>
+
+    <%= f.submit '保存' %>
+
+<% end %>
+
+    <div class = "action"></div>
+
+    <s class = "show" href = #>show</s>
+    <s class = "back" href = "/books">Back</s>
+
+</body>

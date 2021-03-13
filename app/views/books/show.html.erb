@@ -1,0 +1,18 @@
+<body>
+  <p id = "notisc">Book was successfully created</p>
+
+  <p>
+    <strong>Title:</strong>
+    <%= @book.title %>
+  </p>
+
+  <p>
+    <strong>Body:</strong>
+    <%= @book.body %>
+  </p>
+
+  <%= link_to "edit", edit_book_path(@book) %>
+  |
+  <a class = "back" >Back</a>
+
+</body>
