@@ -21,10 +21,11 @@
      <td><%= book.body %></td>
 
      <td>
-       <a class = "show">Show</a>
-       <a class = "edit">Edit</a>
-       <a class = "destroy">Destroy</a>
+       <%= link_to "Show", book_path(book) %>
+       <%= link_to "Edit", edit_book_path(book)%>
+       <%= link_to "Destroy", book_path(book), method: :delete %>
      </td>
+
     </tr>
     <% end %>
   </tbody>
